@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() 
+{
+  int x, y, n;
+  printf("Enter a number\n");
+  printf("Enter Value 1: ");
+  scanf("%d", &x);
+  printf("Enter Value 2: ");
+  scanf("%d", &y);
+  printf("Choose an operation:\n");
+  printf("1) Addition\n");
+  printf("2) Subtraction\n");
+  printf("3) Multiplication\n");
+  printf("4) Division\n");
+  printf("Enter your choice: ");
+  scanf("%d", &n);
+
+    switch(n) 
+    {
+      case 1:
+          printf("Addition: %d\n", x + y);
+          break;
+      case 2:
+          printf("Subtraction: %d\n", x - y);
+          break;
+      case 3:
+          printf("Multiplication: %d\n", x * y);
+          break;
+      case 4:
+          if(y != 0)
+            printf("Division: %.2f\n", (float)x / y);
+          else
+            printf("Error: Division by zero is not possible!\n");
+            break;
+        default:
+            printf("Invalid Input\n");
+    }
+    return 0;
+}
