@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main() 
 {
   int x, y, n;
@@ -19,17 +18,17 @@ int main()
     switch(n) 
     {
       case 1:
-          printf("Addition: %d\n", x + y);
+          printf("Addition: %d\n", x+y);
           break;
       case 2:
-          printf("Subtraction: %d\n", x - y);
+          printf("Subtraction: %d\n", x-y);
           break;
       case 3:
-          printf("Multiplication: %d\n", x * y);
+          printf("Multiplication: %d\n", x*y);
           break;
       case 4:
           if(y != 0)
-            printf("Division: %.2f\n", (float)x / y);
+            printf("Division: %.2f\n", (float)x/y);
           else
             printf("Error: Division by zero is not possible!\n");
             break;
